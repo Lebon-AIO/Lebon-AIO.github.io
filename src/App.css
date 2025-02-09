@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@layer base {
+    @font-face {
+        font-family: "Crude";
+        src: url(assets/Crude.otf);
+    }
+}
+
+@theme {
+    --font-display: "Crude", sans-serif;
+}
