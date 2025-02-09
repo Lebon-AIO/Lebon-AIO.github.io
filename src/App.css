@@ -10,3 +10,9 @@
 @theme {
     --font-display: "Crude", sans-serif;
 }
+
+.html {
+    @media (prefers-color-scheme: dark) {
+        @apply bg-neutral-900;
+    }
+}
