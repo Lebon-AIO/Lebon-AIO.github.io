@@ -1,18 +1,34 @@
 @import "tailwindcss";
+@import "tailwindcss-animated";
+
+@custom-variant dark (&:where(.dark, .dark *));
 
 @layer base {
     @font-face {
         font-family: "Crude";
         src: url(assets/Crude.otf);
     }
+
+    @font-face {
+        font-family: "Helvetica";
+        src: url(assets/HelveticaNeueBlack.otf);
+    }
+
+    @keyframes slide {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(calc(-100%));
+        }
+    }
 }
 
 @theme {
-    --font-display: "Crude", sans-serif;
+    --font-display: "Helvetica", sans-serif;
+    --animate-slide: slide 400s linear infinite;
 }
 
-.html {
-    @media (prefers-color-scheme: dark) {
-        @apply bg-neutral-900;
-    }
+html {
+    @apply bg-neutral-900;
 }
