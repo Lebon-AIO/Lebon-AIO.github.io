@@ -16,10 +16,10 @@ function App() {
 
   return (
     <div className="h-screen gap-2 flex flex-col items-center justify-center select-none cursor-cell">
-      <h1 className="text-7xl md:text-9xl font-display bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text text-transparent">
+      <h1 className="text-6xl md:text-9xl font-display bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text text-transparent">
         LebonAIO
       </h1>
-      <p className="text-white/20 font-mono">
+      <p className="text-white/20 font-mono text-center text-xs md:text-sm">
         upcoming AIO bot, focused on collectibles in Europe
       </p>
       {/* className="relative overflow-hidden w-full h-12 bg-transparent" */}
