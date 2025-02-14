@@ -10,7 +10,7 @@
     }
 
     @font-face {
-        font-family: "Helvetica";
+        font-family: "Helvetica Neue Black";
         src: url(assets/HelveticaNeueBlack.otf);
     }
 
@@ -25,7 +25,7 @@
 }
 
 @theme {
-    --font-display: "Helvetica", sans-serif;
+    --font-display: "Helvetica Neue Black", sans-serif;
     --animate-slide: slide 400s linear infinite;
 }
 
