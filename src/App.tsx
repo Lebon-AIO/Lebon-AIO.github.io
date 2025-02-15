@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div className="h-[100dvh] gap-2 flex flex-col items-center justify-center select-none cursor-cell">
-      <h1 className="text-6xl md:text-9xl font-display bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text text-transparent">
+      <h1 className="text-6xl md:text-9xl font-display bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text text-transparent animate-bg bg-[size:200%]">
         LebonAIO
       </h1>
       <p className="text-white/20 font-mono text-center text-xs md:text-sm">
@@ -35,7 +35,7 @@ function App() {
                     key={`${i}-${name}`}
                     src={imageUrl}
                     alt={name}
-                    className="h-10 opacity-5 hover:opacity-20 transition-opacity brightness-0 invert"
+                    className="h-10 opacity-20 hover:opacity-50 hover:scale-105 transition-opacity brightness-0 invert"
                     aria-hidden={i > 0}
                   />
                 );
